@@ -1,0 +1,455 @@
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+/* Primary Styles */
+
+
+h1 {
+    font-size: 1.4em;
+}
+
+em {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu {
+    width: 17%;
+}
+
+#mainbox{
+    font-size: 24px;
+
+}
+.sidemenu{
+    position: fixed;
+    left: 0px;
+    height: 100%;
+    background-color: #87bc00;
+    z-index: 1;
+    padding-top: 100px;
+}
+.sidemenu a{
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #090909;
+    display: block;
+}
+.sidemenu a:hover{
+    color: white;
+}
+
+.div11 {
+
+}
+.container11 {
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    display: flex;
+}
+
+.content {
+    width: 83%;
+}
+
+/*TABLE CSS*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+table {
+    width: 100%;
+    flex: 1;
+    display: grid;
+    border-collapse: collapse;
+    /* These are just initial values which are overriden using JavaScript when a column is resized */
+    grid-template-columns:
+    minmax(30px, 1fr)
+    minmax(70px, 1.67fr)
+    minmax(70px, 1.67fr)
+    minmax(150px, 2.1fr)
+    minmax(100px, 1.67fr)
+    minmax(100px, 1.67fr)
+    minmax(100px, 1.67fr)
+    minmax(100px, 2.67fr)
+    minmax(70px, 1fr)
+    minmax(10px, 1fr)
+    minmax(10px, 1fr)
+    minmax(10px, 1fr)
+}
+
+thead,
+tbody,
+tr {
+    display: contents;
+}
+
+th,
+td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: #b6aa00;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: white;
+    position: relative;
+}
+
+th:last-child {
+    border: 0;
+}
+
+.resize-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0;
+    width: 3px;
+    cursor: col-resize;
+}
+
+.resize-handle:hover,
+    /* The following selector is needed so the handle is visible during resize even if the mouse isn't over the handle anymore */
+.header--being-resized .resize-handle {
+    opacity: 0.5;
+}
+
+th:hover .resize-handle {
+    opacity: 0.3;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #808080;
+}
+
+tr:nth-child(even) td {
+    background: #e1fbea;
+}
+
+.editIcon {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    cursor: pointer;
+}
+
+.editIcon:Hover {
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+}
+
+.userRow:hover {
+    font-weight: bold;
+}
+
+.houseTable {
+    width: 100%;
+    flex: 1;
+    display: grid;
+    border-collapse: collapse;
+    /* These are just initial values which are overriden using JavaScript when a column is resized */
+    grid-template-columns:
+    minmax(30px, 0.7fr)
+    minmax(70px, 1.67fr)
+    minmax(200px, 2.5fr)
+    minmax(200px, 2.5fr)
+    minmax(100px, 1.1fr)
+    minmax(100px, 1.1fr)
+    minmax(30px, 0.7fr)
+    minmax(30px, 0.7fr)
+}
+
+.userStats {
+    border: 1px solid black;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.Info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.Info span{
+}
+
+.userDates {
+    justify-content: space-around;
+}
+
+
+/* delete loader*/
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    border: 8px solid #1a1818;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #201e1e transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.regg1 {
+   
+    border-radius: 40px;
+}
+
+.regg1 h2 {
+    color: #037429;
+}
+
+.form-group{
+    
+}
+
+.UsersInHouseTable {
+    margin: 15px;
+    width: 100%;
+    flex: 1;
+    display: grid;
+    border-collapse: collapse;
+    /* These are just initial values which are overriden using JavaScript when a column is resized */
+    grid-template-columns:
+    minmax(30px, 1fr)
+    minmax(70px, 1.67fr)
+    minmax(70px, 1.67fr)
+}
+
+.UsersInHouseRow:hover {
+    cursor: pointer;
+}
+
+.userRow1 {
+    background: #5fb68b;
+}
+
+.welcome_admin {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContainerInHouse{
+    margin: 15px;
+    width: 100%;
+    flex: 1;
+    display: grid;
+    border-collapse: collapse;
+    /* These are just initial values which are overriden using JavaScript when a column is resized */
+    grid-template-columns:
+    minmax(30px, 1fr)
+    minmax(70px, 1.67fr)
+    minmax(70px, 1.67fr)
+    minmax(70px, 1.67fr)
+    minmax(70px, 1.67fr)
+    minmax(70px, 1.67fr)
+}
+
+.btnChangeContainer{
+    width: 100%;
+}
+
+.ContainerToContainer {
+    background: rgba(2, 13, 99, 0.12);
+}
+
+.ImportExportComponent {
+    margin-top: 250px;
+    flex-direction: column ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IEButton {
+    margin: 10px;
+}
+
+.IEButton button {
+    font-size: 24px;
+    border: 1px solid rgba(128, 128, 128, 0.48);
+    background: rgba(169, 230, 39, 0.7);
+    width: 300px;
+}
+
+.modalWindow {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    z-index: 999;
+}
+
+.form-group imput {
+    opacity: 0.4;
+}
+
+.modalWindow.active {
+    transform: scale(1);
+}
+
+.modal__content {
+    padding: 50px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.form-group-container {
+    margin: 20px;
+}
+
+.ThrowWindow{
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    width: 50%;
+}
+
+.ThrowWrapper {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.alert{
+    background-color: #fff701;
+    border-color: #596802
+}
+
+button{
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    background: #fff701;
+    font-weight: bold;
+    color: rgb(5, 5, 5);
+    margin: 4px;
+}
+@media screen and (max-width: 700px) {
+.sidemenu a{
+font-size: 14px;
+padding: 4px 12px;
+}
+.ThrowWindow{
+   width: 100%;
+}
+.ThrowWrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.navbar-nav{
+font-size: 16px;
+}
+.register-form {
+    padding: 4px;
+    margin: 4px;
+}
+.containerFLname{
+    flex-wrap: wrap;
+}
+}

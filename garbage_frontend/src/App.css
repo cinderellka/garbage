@@ -1,0 +1,324 @@
+.App {
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61fb97;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.navbar-brand{
+  margin-left: 1rem;
+}
+
+.AuthContainer{
+
+}
+
+.navbar-nav{
+  margin: 10px;
+}
+
+.form form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group{
+  margin: 20px;
+}
+
+.logoDiv img {
+  width: 20%;
+  width: 20%;
+  border-radius: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbarApp {
+  box-shadow: 0px 0px 3px 0px #9d8e8e;
+}
+
+.btu{
+  cursor: pointer;
+}
+
+.btu:hover{
+  border-bottom: 2px solid rgb(128, 255, 0);
+  font-size: 18px;
+}
+
+.form-select  {
+  width: 120px;
+}
+
+.bd-highlight {
+  align-items: center;
+}
+
+.backgroud_image{
+  height: 100vh;
+
+}
+
+.img_wrapper{
+  height: 100vh;
+  width: 100%;
+  background: url('https://i.imgur.com/MOzagSP.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content_wrapper{
+  background-color: #fc4d4d;
+}
+.content_w{
+
+padding: 24px;
+width: 50%;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.text1{
+  padding: 8px;
+  
+  background: rgba(255, 255, 255, 0.74);
+  max-width: 700px;
+
+}
+
+
+.content_info {
+
+  margin-top: 48px;
+
+}
+
+.info_title {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+}
+
+.info_text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+.waste_info {
+
+  margin-top: 48px;
+
+}
+
+.waste_title {
+  font-size: 36px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+}
+
+.waste_text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+.order-button{
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #037429;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 9px;
+}
+.info_block{
+  max-width: 700px;
+}
+
+.info_inner{
+  display: flex;
+  gap: 20px;
+  align-items:center;
+  justify-content: space-between;
+
+}
+.waste_block{
+  max-width: 700px;
+}
+
+.waste_inner{
+  display: flex;
+  gap: 20px;
+  align-items:center;
+  justify-content: space-between;
+
+}
+.map_inner{
+  display: flex;
+  gap: 20px;
+  align-items:center;
+  margin-bottom: 24px;
+
+}
+
+.map_title{
+  font-size: 52px;
+  margin: 48px 0;
+}
+.map_desc{
+  text-align: justify;
+  max-width: 500px;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.waste_img{
+  max-width: 500px;
+}
+
+.text_title{
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.map_list {
+  list-style-type: none; 
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.map_list-item {
+ 
+ gap: 12px;
+  
+}
+
+
+
+
+@media screen and (max-width: 757px) {
+.waste_inner{
+  display: block;
+}
+.info_inner{
+  display: block;
+}
+.waste_title {
+  font-size: 20px;
+
+}
+
+.waste_text {
+  font-size: 14px;
+
+}
+.info_block{
+  margin-bottom: 48px;
+}
+.info_title {
+  font-size: 20px;
+
+}
+
+.info_text {
+  font-size: 14px;
+
+}
+.order-button{
+  font-size: 14px;
+}
+.map_desc{
+  font-size: 20px;
+}
+.map_inner{
+  display: block;
+  padding: 0;
+}
+.waste_img {
+  width: 100%;
+}
+iframe{
+  max-width: 450px;
+}
+
+}
+
+
+@media screen and (max-width: 400px) {
+  .text1 h2{
+   font-size: 18px;
+  }
+  .text1 h5{
+    font-size: 14px;
+   }
+   iframe{
+    max-width: 350px;
+  }
+}

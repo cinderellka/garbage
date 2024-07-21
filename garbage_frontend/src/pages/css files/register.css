@@ -1,0 +1,21 @@
+.containerFLname {
+    display: flex;
+    justify-content: space-between;
+}
+
+.houseEdit {
+    justify-content: space-around;
+}
+
+.btn1 {
+    background-color: #037429;
+    border: 0px;
+}
+
+.btn1:hover {
+    background-color: #697000;
+}
+
+.regg h2 {
+    color: #697000;
+}
